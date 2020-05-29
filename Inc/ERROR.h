@@ -1,0 +1,22 @@
+/*
+ * ERROR.h
+ *
+ *  Created on: May 29, 2020
+ *      Author: mate_pc
+ */
+
+#ifndef ERROR_H_
+#define ERROR_H_
+
+enum class errorType {
+	NO_ERROR = 0x00,
+	VBAT_CELL_UNBALANCED = 0x01,
+	VMID1_CELL_UNBALANCED = 0x02,
+	VMID2_CELL_UNBALANCED = 0x04,
+	VUSB_MEASUREMENT_FAILED = 0x08,
+	VBAT_MEASUREMENT_FAILED = 0x10,
+	VMID1_MEASUREMENT_FAILED = 0x20,
+	VMID2_MEASUREMENT_FAILED = 0x40
+};
+
+#endif /* ERROR_H_ */
